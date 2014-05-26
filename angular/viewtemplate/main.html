@@ -1,0 +1,30 @@
+<div ng-controller="mainCtrl">
+
+
+pre-deifine citys: rajkot , londodn <br>
+
+your city goes here for weather forcasting:  <div id="cityid" style="width:150px" > </div>   &nbsp;
+
+<br>
+
+<button  ng-click="go1()" >  Find </button>
+
+ data : 
+<table border="1">
+<tr ng-repeat="item in temparraymapvalue" > 
+	<td>{[{item}]}
+</tr>	
+ 
+</table>
+
+ <div id="basicMap"></div>
+</div>
+
+<script> 
+ $("#cityid").select2({
+    tags:["rajkot","london"],
+    tokenSeparators: [",", " "]});
+
+
+
+</script>
